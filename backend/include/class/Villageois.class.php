@@ -60,6 +60,25 @@ class Villageois extends Utils
         return false;
     }
 
+    public static function testPass($email, $mdp): bool {
+          $con = Bdd::getCon();
+          $sql = "SELECT villageois_mot_de_passe FROM villageois WHERE villageois_EMAIL = :villageois_EMAIL";
+          $req = $con->prepare($sql);
+          $req->execute([":villageois_EMAIL" => $email]);
+          $pass = $req->fetch();
+          // $toCheck = isset($_POST['mot_de_passe']);
+          // echo '<pre>';
+          // var_dump($pass  );
+          // echo '</pre>';
+          if ($req->rowCount() == 1) {
+              if (password_verify($mdp, $pass['villageois_mot_de_passe'])) {
+                return true;
+              }
+          }
+          return false;
+        }
+
+
     public function save(): void
     {
         $con = Bdd::getCon();

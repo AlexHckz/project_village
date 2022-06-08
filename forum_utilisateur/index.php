@@ -38,7 +38,7 @@ $header_img = 'assets/img/home-bg3.jpg';
                 <?php include_once("../backend/vues/toutes_les_propositions.php"); ?>
 
                 <!-- Pager-->
-                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Autres
+                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="proposition.php">Autres
                         propositions →</a></div>
             </div>
         </div>

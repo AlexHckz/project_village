@@ -22,14 +22,14 @@ class Villageois extends Utils
         $this->villageois_mandat = $villageois_mandat;
     }
 
-    public static function getByEmail(string $email): Villageois
-    {
-        $con = Bdd::getCon();
-        $sql = "SELECT * FROM villageois WHERE villageois_EMAIL = :villageois_EMAIL";
-        $req = $con->prepare($sql);
-        $req->execute([":villageois_EMAIL" => $email]);
-        $req->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, "Villageois");
-        return $req->fetch();
+    // on récupère les données d'un villageois grâce à son email en STATIC. //
+    public static function getByEmail(string $email): villageois {
+      $con = bdd::getCon();
+      $sql = 'SELECT * FROM villageois WHERE villageois_EMAIL = :villageois_EMAIL';
+      $query = $con->prepare($sql);
+      $query->execute([':villageois_EMAIL' => $email]);
+      $query->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'villageois');
+      return $query->fetch();
     }
 
     // public function recupDataInTheBdd(): void

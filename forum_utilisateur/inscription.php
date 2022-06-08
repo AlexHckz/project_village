@@ -48,31 +48,31 @@ if (!isset($_COOKIE["msg"])) {
                             <div class="form-floating">
                                 <input class="form-control" id="email" name="email" type="text" placeholder="Enter your email..." data-sb-validations="required" />
                                 <label for="email">Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">A name is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Un email est requis.</div>
                             </div>
 
                             <div class="form-floating">
                                 <input class="form-control" id="nom" name="nom" type="text" placeholder="Enter your nom..." data-sb-validations="required" />
                                 <label for="nom">Nom : </label>
-                                <div class="invalid-feedback" data-sb-feedback="nom:required">A name is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="nom:required">Un nom est requis.</div>
                             </div>
 
                             <div class="form-floating">
                                 <input class="form-control" id="prenom" name="prenom" type="text" placeholder="Enter your prenom..." data-sb-validations="required" />
                                 <label for="prenom">Prénom : </label>
-                                <div class="invalid-feedback" data-sb-feedback="prenom:required">A name is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="prenom:required">Un prénom est requis.</div>
                             </div>
 
                             <div class="form-floating">
                                 <input class="form-control" id="adresse" name="adresse" type="text" placeholder="Enter your adresse..." data-sb-validations="required" />
                                 <label for="adresse">Adresse : </label>
-                                <div class="invalid-feedback" data-sb-feedback="adresse:required">A name is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="adresse:required">Une adresse valide est requise.</div>
                             </div>
 
                             <div class="form-floating">
-                                <input class="form-control" id="date_de_naissance" name="date_de_naissance" type="text" placeholder="Enter your date_de_naissance..." data-sb-validations="required" />
+                                <input class="form-control" id="date_de_naissance" name="date_de_naissance" type="text" placeholder="Mois-Jour-Année" data-sb-validations="required" />
                                 <label for="date_de_naissance">Date de naissance : </label>
-                                <div class="invalid-feedback" data-sb-feedback="date_de_naissance:required">A name is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="date_de_naissance:required">Une date de naissance valide est requise.</div>
                             </div>
 
 

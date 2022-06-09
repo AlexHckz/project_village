@@ -7,7 +7,7 @@ foreach ($data as $proposition) : ?>
 
     <!-- Post preview-->
     <div class="post-preview">
-        <a href="../backend/vues/une_proposition.php">
+        <a href="./proposition.php?proposition_ID=<?= $proposition->proposition_ID ?>">
             <h2 class="post-title"><?= $proposition->proposition_titre ?></h2>
             <h3 class="post-subtitle"><?= $proposition->proposition_description ?></h3>
         </a>

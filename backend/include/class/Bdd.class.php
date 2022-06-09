@@ -2,7 +2,7 @@
 class Bdd
 {
     private static $user = "root";
-    private static $pass = "";
+    private static $pass = "root";
     private static $driver = "mysql";
     private static $charset = "utf8";
     private static $host = "localhost";

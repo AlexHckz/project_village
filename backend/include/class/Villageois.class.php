@@ -23,7 +23,7 @@ class Villageois extends Utils
     }
 
     // on récupère les données d'un villageois grâce à son email en STATIC. //
-    public static function getByEmail(string $email): villageois {
+    public static function getByEmail(string $email): Villageois {
       $con = bdd::getCon();
       $sql = 'SELECT * FROM villageois WHERE villageois_EMAIL = :villageois_EMAIL';
       $query = $con->prepare($sql);

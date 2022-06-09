@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Mon espace</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,8 +41,8 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
-                                        <div class="form-group" action="../backend/actions/connexion_villageois.php">
+                                    <form class="user" method="post" action="../backend/actions/connexion_villageois.php">
+                                        <div class="form-group">
                                             <input type="email" name="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Entrez votre adresse email...">
@@ -50,7 +50,12 @@
                                         <div class="form-group">
                                             <input type="password" name="mot_de_passe" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Entrez votre de passe...">
+                                                <?php if(isset($_GET["error"])):?>
+                                                    <div class="error">Invalid Username or Password</div>
+                                                <?php endif; ?>
+                                                <?php //print_r($_SERVER); ?>
                                         </div>
+
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
@@ -58,9 +63,9 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">
                                             Login
-                                        </a>
+                                        </button>
                                         <hr>
                                         <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google

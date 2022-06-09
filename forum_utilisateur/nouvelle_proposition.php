@@ -46,39 +46,35 @@ if (!isset($_COOKIE["msg"])) {
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN" class="" action="../backend/actions/enregistrement_villageois.php" method="post">
 
                             <div class="form-floating">
-                                <input class="form-control" id="email" name="email" type="text" placeholder="Enter your email..." data-sb-validations="required" />
-                                <label for="email">Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">A name is required.</div>
+                                <input class="form-control" id="proposition_titre" name="proposition_titre" type="text" placeholder="Enter your proposition_titre..." data-sb-validations="required" />
+                                <label for="proposition_titre">Proposition_titre</label>
+                                <div class="invalid-feedback" data-sb-feedback="proposition_titre:required">A title is required.</div>
                             </div>
 
                             <div class="form-floating">
-                                <input class="form-control" id="nom" name="nom" type="text" placeholder="Enter your nom..." data-sb-validations="required" />
-                                <label for="nom">Nom : </label>
-                                <div class="invalid-feedback" data-sb-feedback="nom:required">A name is required.</div>
+                                <input class="form-control" id="proposition_img" name="proposition_img" type="text" placeholder="Enter your proposition_img..." data-sb-validations="required" />
+                                <label for="proposition_img">Proposition_img : </label>
+                                <div class="invalid-feedback" data-sb-feedback="proposition_img:required">An img is required.</div>
                             </div>
 
                             <div class="form-floating">
-                                <input class="form-control" id="prenom" name="prenom" type="text" placeholder="Enter your prenom..." data-sb-validations="required" />
-                                <label for="prenom">Prénom : </label>
-                                <div class="invalid-feedback" data-sb-feedback="prenom:required">A name is required.</div>
+                                <input class="form-control" type="date" id="proposition_date" name="proposition_date" value="" min="2000-01-01">
+                                <label for="proposition_date">Proposition_date : </label>
+                                <div class="invalid-feedback" data-sb-feedback="proposition_date:required">A date is required.</div>
                             </div>
 
                             <div class="form-floating">
-                                <input class="form-control" id="adresse" name="adresse" type="text" placeholder="Enter your adresse..." data-sb-validations="required" />
-                                <label for="adresse">Adresse : </label>
-                                <div class="invalid-feedback" data-sb-feedback="adresse:required">A name is required.</div>
+                                <input class="form-control" type="date" id="perioded" name="perioded" value="" min="2000-01-01">
+                                <label for="perioded">Perioded : </label>
+                                <div class="invalid-feedback" data-sb-feedback="perioded:required">A periode is required.</div>
                             </div>
 
                             <div class="form-floating">
-                                <input class="form-control" id="date_de_naissance" name="date_de_naissance" type="text" placeholder="Enter your date_de_naissance..." data-sb-validations="required" />
-                                <label for="date_de_naissance">Date de naissance : </label>
-                                <div class="invalid-feedback" data-sb-feedback="date_de_naissance:required">A name is required.</div>
+                                <input class="form-control" type="date" id="periodef" name="periodef" value="" min="2000-01-01">
+                                <label for="periodef">Periodef : </label>
+                                <div class="invalid-feedback" data-sb-feedback="periodef:required">A periode is required.</div>
                             </div>
 
-                            <div class="form-floating">
-                                <input class="form-control" type="password" name="mot_de_passe" placeholder="entrez un mot de passe" required="required">
-                                <label for="mot_de_passe">Mot de passe</label>
-                            </div>
 
                             <input class="btn btn-primary text-uppercase" id="submitButton" type="submit" name="submit" value="sub" style="margin-top:1rem">
                         </form>

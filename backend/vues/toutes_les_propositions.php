@@ -7,13 +7,13 @@ foreach ($data as $proposition) : ?>
 
     <!-- Post preview-->
     <div class="post-preview">
-        <a href="post.html">
+        <a href="./proposition.php?proposition_ID=<?= $proposition->proposition_ID ?>">
             <h2 class="post-title"><?= $proposition->proposition_titre ?></h2>
             <h3 class="post-subtitle"><?= $proposition->proposition_description ?></h3>
         </a>
         <p class="post-meta">
             Posted by
-            <a href="#!"><?= $proposition->villageois()->villageois_EMAIL ?></a>
+            <a href="une_proposition.php"><?= $proposition->villageois()->villageois_EMAIL ?></a>
             on <?= $proposition->periode()->periode_date_debut ?>
         </p>
     </div>

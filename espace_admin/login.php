@@ -50,10 +50,9 @@
                                         <div class="form-group">
                                             <input type="password" name="mot_de_passe" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Entrez votre de passe...">
-                                                <?php if(isset($_GET["error"])):?>
-                                                    <div class="error">Invalid Username or Password</div>
+                                                 <?php if(isset($_GET["error"])):?>
+                                                    <div class="error" style="font-size:14px;padding-top:10px;color:#de2916;">Email ou Mot de Passe incorrect</div>
                                                 <?php endif; ?>
-                                                <?php //print_r($_SERVER); ?>
                                         </div>
 
                                         <div class="form-group">
@@ -76,10 +75,10 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                        <a class="small" href="forgot-password.html">Mot de Passe oublié?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small" href="../forum_utilisateur/inscription.php">Créer un compte?</a>
                                     </div>
                                 </div>
                             </div>

@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
       }
     }
   } if (!$auth) {
-    header("Location:../../espace_admin/login.php/?error=1");
+    header("Location:../../espace_admin/login.php?error=1");
     echo 'mot de passe invalide';
 }
 }

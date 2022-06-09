@@ -39,7 +39,7 @@ if (!isset($_COOKIE["msg"])) {
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <p>Créez votre compte et participez à </p>
+                    <p>Créez votre compte pour pouvoir participer au forum :</p>
 
                     <div class="my-5">
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN" class="" action="../backend/actions/enregistrement_villageois.php" method="post">
@@ -70,7 +70,7 @@ if (!isset($_COOKIE["msg"])) {
 
                             <div class="form-floating">
                                 <input class="form-control" id="date_de_naissance" name="date_de_naissance" type="text" placeholder="Mois-Jour-Année" data-sb-validations="required" />
-                                <label for="date_de_naissance">Date de naissance : </label>
+                                <label for="date_de_naissance">Date de naissance : (XX-XX-XXXX)</label>
                                 <div class="invalid-feedback" data-sb-feedback="date_de_naissance:required">Une date de naissance valide est requise.</div>
                             </div>
 
@@ -101,8 +101,11 @@ if (!isset($_COOKIE["msg"])) {
                                 <label for="mot_de_passe">Mot de passe</label>
                             </div>
 
-                            <input class="btn btn-primary text-uppercase" id="submitButton" type="submit" name="submit" value="sub" style="margin-top:1rem">
+                            <input class="btn btn-primary text-uppercase" id="submitButton" type="submit" name="submit" value="S'inscrire" style="margin-top:1rem">
                         </form>
+                        <div class="conditions-pass" style="font-size:15px;color:grey;padding-top:3px;">
+                          Pour la création de votre mot de passe, merci de respecter ces consignes : au moins 8 caractères, au moins un nombre, au moins une lettre majuscule, au moins une lettre minuscule, et au moins un caractère spécial (! @ # $)
+                        </div>
 
                         <p><?php echo $_COOKIE["msg"]; ?></p>
                     </div>

@@ -1,6 +1,6 @@
 <?php
 //pour affecter une image de fond au header a partir du composant generique
-$header_img = 'assets/img/contact-bg.jpg';
+$header_img = 'assets/img/contact-bg.png';
 if (!isset($_COOKIE["msg"])) {
     $_COOKIE["msg"] = "";
 }

@@ -1,6 +1,6 @@
 <?php
 //pour affecter une image de fond au header a partir du composant generique
-$header_img = 'assets/img/home-bg3.jpg';
+$header_img = 'assets/img/home-bg3.png';
 ?>
 <!DOCTYPE html>
 <html lang="en">
